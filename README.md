@@ -18,7 +18,7 @@ This AI Quantitative Analyst tool is designed to leverage cutting-edge AI techno
 bash
 git clone https://github.com/MichaelCoughlinAN/AI-Fintech.git
 cd AI-Fintech
-# Follow additional setup instructions in setup.txt
+Follow additional setup instructions in setup.txt
 
 ## Contributing
 Interested in contributing? I welcome contributions from anyone!
@@ -28,4 +28,4 @@ Interested in contributing? I welcome contributions from anyone!
 
 ---
 
-For more information, questions, or feedback, feel free to [open an issue](https://github.com/MichaelCoughlinAN/AI-Fintech/issues) or submit a pull request.
+For more information, questions, or feedback, feel free to visit [hiimmichael.com](https://hiimmichael.com).
