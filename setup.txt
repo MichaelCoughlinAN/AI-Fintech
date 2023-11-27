@@ -42,6 +42,8 @@ You betcha! Here's how you can set up that `get_google_news.py` script:
 
 Remember, if you run into any trouble, it's always okay to ask for help. Us Minnesotans are always ready to lend a hand, don't cha know. Have fun with your script, and stay warm out there!
 
+----------------------------------------
+
 
 NASDAQ DATA LINK
 
