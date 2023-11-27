@@ -5,6 +5,7 @@ import config as config
 import yfinance as yf
 import matplotlib.dates as mdates
 from datetime import datetime, timedelta
+import pandas_ta as ta 
 
 # Define the stock symbol and timeframe
 symbol = 'SQQQ'
