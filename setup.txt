@@ -1,0 +1,275 @@
+GOOGLE NEWS CLIENT 
+
+You betcha! Here's how you can set up that `get_google_news.py` script:
+
+1. **Install the gnewsclient Package:** First things first, you're gonna need to install the `gnewsclient` package. Open up your terminal, don't cha know, and run this command:
+
+   ```
+   pip install gnewsclient
+   ```
+
+   That's gonna fetch the package from the internet and install it on your computer, you bet.
+
+2. **Prepare Your Script:** Now, grab that `get_google_news.py` script you've got there. Make sure it's lookin' exactly like this:
+
+   ```python
+   from gnewsclient import gnewsclient
+
+   client = gnewsclient.NewsClient(language='english', 
+                                   location='minnesota', 
+                                   topic='business', 
+                                   max_results=3)
+
+   news_list = client.get_news()
+
+   for item in news_list:
+       print("Title : ", item['title'])
+       print("Link : ", item['link'])
+       print("")
+   ```
+
+   This script is gonna fetch the top 3 business news stories from Minnesota, don't cha know.
+
+3. **Run the Script:** Now it's time to run your script. Open your terminal again, navigate to the folder where your `get_google_news.py` script is saved, and run it:
+
+   ```
+   python get_google_news.py
+   ```
+
+   This will print out the titles and links of the latest business news from Minnesota.
+
+4. **Enjoy the News, Ya Know:** Once you run the script, it'll give ya the latest business news right from Minnesota. Sit back, maybe with a nice hot dish or a bar, and catch up on what's happenin' in the business world.
+
+Remember, if you run into any trouble, it's always okay to ask for help. Us Minnesotans are always ready to lend a hand, don't cha know. Have fun with your script, and stay warm out there!
+
+
+NASDAQ DATA LINK
+
+Here's how to set up and use your script for fetching data from Nasdaq Data Link:
+
+1. **Install the nasdaqdatalink Package:** First up, you'll need to install the `nasdaqdatalink` package. You can do this by opening your terminal and running:
+
+   ```
+   pip install nasdaqdatalink
+   ```
+
+   This command will download and install the package so you can use it in your Python scripts.
+
+2. **Get Your Nasdaq Data Link API Key:** For this script to work, you're gonna need an API key from Nasdaq Data Link. If you don't have one already, head on over to the Nasdaq Data Link website, sign up, and get yourself an API key. Keep it handy for the next step.
+
+3. **Set Up Your Config File:** You'll need a `config.py` file to store your Nasdaq Data Link API key. Create a file named `config.py` and inside it, add your API key like this:
+
+   ```python
+   nasdaq_key = 'your_nasdaq_data_link_api_key_here'
+   ```
+
+   Replace `'your_nasdaq_data_link_api_key_here'` with your actual API key.
+
+4. **Prepare Your Script:** Now, let's make sure your script is all set. It should look like this:
+
+   ```python
+   import nasdaqdatalink
+   import config as config
+
+   nasdaqdatalink.ApiConfig.api_key = config.nasdaq_key 
+
+   def get_nasdaq_datatable(table_name, ticker_symbol):
+       # ... [The rest of your function as you've written it]
+    
+   # Example usage
+   table = 'ZACKS/FC'
+   ticker = 'AAPL'
+   data = get_nasdaq_datatable(table, ticker)
+
+   print(data.head())
+   ```
+
+   This script will fetch data from Nasdaq Data Link for the specified table and ticker symbol.
+
+5. **Run Your Script:** Open up your terminal again, navigate to where your script is, and run it:
+
+   ```
+   python nasdaq.py
+   ```
+
+6. **Check the Output:** After running the script, you should see the Nasdaq data for your specified table and ticker symbol printed out. It's a great way to keep track of what's happening in the stock market, dontcha know.
+
+7. **Have a Good Time with Your Data:** Now you can analyze and enjoy all that financial data to your heart's content. Whether you're a seasoned trader or just curious about the stock market, this script will serve you well.
+
+Remember, if you're ever in a pickle or need help, don't hesitate to reach out. That's what us Minnesotans do – we help each other out! Good luck with your script, and stay cozy out there!
+
+----------------------------------------
+
+
+AI Technical Analysis (TA)
+
+1. **Install Required Packages:**
+   First off, ya gotta install some Python packages. Open up your terminal and run these commands:
+
+   ```bash
+   pip install yfinance pandas pandas_ta matplotlib
+   ```
+
+   And don't forget about `openai` if you haven't already installed it:
+
+   ```bash
+   pip install openai
+   ```
+
+   These commands will install the necessary packages for fetching and analyzing stock data and plotting the charts.
+
+2. **Get Your OpenAI API Key:**
+   For the script to work with OpenAI, you'll need an API key. Head over to the OpenAI website, sign up, and grab your API key. Keep it safe and handy for the next step.
+
+3. **Set Up Your Config File:**
+   You'll need a `config.py` file to store your OpenAI API key. Create a file named `config.py` and add your API key like this:
+
+   ```python
+   ai_key = 'your_openai_api_key_here'
+   ```
+
+   Replace `'your_openai_api_key_here'` with your actual API key.
+
+4. **Prepare Your Script:**
+   Make sure your script is all set. It should look like what you've posted, fetching stock data using `yfinance`, calculating technical indicators with `pandas_ta`, and generating AI notes with `openai`.
+
+5. **Run Your Script:**
+   Now, let's run the script. In your terminal, navigate to the folder where your script is and run it:
+
+   ```bash
+   python stock_ta.py
+   ```
+
+6. **Check the Output:**
+   After running the script, you should see the stock data printed out, a summary of the technical indicators, and a bunch of plots showing various aspects of the stock's performance.
+
+7. **Enjoy the Data and the Plots:**
+   Now you can delve into the data and plots. Whether you're a seasoned investor or just interested in the stock market, this script will provide a wealth of information.
+
+8. **Keep Experimenting:**
+   Feel free to modify the script to track different stocks or adjust the technical indicators. The world of stock market analysis is your oyster, as they say up north here!
+
+Remember, if you ever get stuck or need a bit of help, just ask around. We're all in this together, and it's mighty nice to help each other out. Good luck with your script, and stay warm!
+
+----------------------------------------
+
+
+REDDIT TOP STOCKS 
+
+Let's get you set up:
+
+1. **Install Required Packages:**
+   First, you'll need to install some Python packages if you haven't already. Open your terminal and run:
+
+   ```bash
+   pip install asyncpraw requests
+   ```
+
+   This command installs `asyncpraw` for interacting with Reddit's API and `requests` for making HTTP requests.
+
+2. **Set Up Your API Keys and Credentials:**
+   For this script, you'll need API keys for Alpha Vantage and credentials for Reddit. Make sure to obtain these and store them in your `config.py` file:
+
+   ```python
+   alpha_key = 'your_alpha_vantage_api_key' (Optional)
+   client_id = 'your_reddit_client_id'
+   client_secret = 'your_reddit_client_secret'
+   username = 'your_reddit_username'
+   password = 'your_reddit_password'
+   user_agent = 'your_user_agent'
+   ```
+
+   Replace the placeholder values with your actual API keys and Reddit credentials.
+
+3. **Check Your Script:**
+   Ensure your script is as you've posted, using `asyncpraw` to fetch data from Reddit and validating potential stock symbols against the Alpha Vantage API.
+
+4. **Run Your Script:**
+   To run your script, navigate to its location in your terminal and execute it with:
+
+   ```bash
+   python get_stocks_from_reddit.py
+   ```
+
+5. **Review the Output:**
+   After running the script, you should see a list of potential stock symbols printed out. It’s like a modern-day treasure hunt!
+
+6. **Adjust as Needed:**
+   Feel free to tweak the script to suit your needs. You might want to adjust the subreddits, the number of posts and comments analyzed, or the criteria for what counts as a potential stock ticker.
+
+7. **Explore and Learn:**
+   This script offers a great opportunity to explore both social media data and financial information. Enjoy the process of learning and discovery!
+
+And remember, if you get stuck or need a bit of help, don’t hesitate to reach out for assistance. There’s a whole community out there ready to lend a hand. Good luck, and have fun with your script!
+
+----------------------------------------
+
+
+GOOGLE TOP TRENDING STOCKS
+
+You betcha! Let's get you all set up with this script to fetch Google Trends data and analyze it using OpenAI. Here's how you can do it, Minnesota style:
+
+1. **Install Required Python Packages:**
+   First off, you'll need some Python packages for your script. Open up your terminal (that's the little program where you type computer commands, ya know), and run these commands:
+
+   ```bash
+   pip install pytrends openai
+   ```
+
+   This will install the `pytrends` package for accessing Google Trends data and the `openai` package for using the OpenAI API.
+
+2. **Get Your OpenAI API Key:**
+   For the OpenAI part of your script to work, you'll need an API key from OpenAI. Head over to the OpenAI website, sign up, and get yourself an API key. Keep this key handy for the next step.
+
+3. **Set Up Your Config File:**
+   You'll need a `config.py` file to store your OpenAI API key. Create a file named `config.py` in the same folder as your script. Inside, add your API key like this:
+
+   ```python
+   ai_key = 'your_openai_api_key_here'
+   ```
+
+   Replace `'your_openai_api_key_here'` with your actual OpenAI API key.
+
+4. **Prepare Your Script:**
+   Make sure your script is all ready to go. It should look like what you’ve posted, ready to fetch Google Trends data and analyze it using OpenAI.
+
+5. **Run Your Script:**
+   Now, it's time to run your script. In your terminal, navigate to the folder where your script is saved. Run it with this command:
+
+   ```bash
+   python get_google_news.py
+   ```
+
+6. **Check the Output:**
+   After running the script, you should see the Google Trends data printed out, followed by the analysis from OpenAI. It's pretty neat to see what's trending and what the AI thinks about it, don't cha know.
+
+7. **Experiment and Explore:**
+   Feel free to change the keywords in the script to see different trends. The world of data is your oyster, as they say!
+
+And remember, if you're ever in a pickle or need a little help, don't hesitate to reach out. That's what neighbors are for! Good luck with your script, and enjoy exploring those trends!
+
+----------------------------------------
+
+
+START SHELL SCRIPT EXPLAINED
+
+The included shell script is designed to run a Python script and handle interrupt signals gracefully. Let's break it down line by line:
+
+1. `#!bin/sh`:
+   - This is the shebang line. It tells the system that this script should be run with the shell interpreter (`sh`), which is a command interpreter in Unix-like systems.
+   - However, there's a small typo here. Typically, the shebang line should start with `#!/bin/sh` (notice the forward slash at the beginning). Without the forward slash, the system might not be able to find the `sh` interpreter.
+
+2. `DIR=$(cd "$(dirname "$0")"; pwd)`:
+   - This line sets the variable `DIR` to the directory where the script is located.
+   - `$(...)` is command substitution. It allows the output of a command to replace the command itself.
+   - `cd "$(dirname "$0")"` changes the current directory to the directory where the script is located. `$0` is a special variable that contains the name of the script. `dirname` is a command that takes a pathname and returns the directory part of it.
+   - After changing the directory, `pwd` (print working directory) is executed, which outputs the current directory. This output is then stored in the `DIR` variable.
+
+3. `(trap 'kill 0' SIGINT; python3 $DIR/google_rising_trend.py )`:
+   - This line runs the Python script `google_rising_trend.py` located in the directory stored in `DIR`.
+   - It uses command grouping with `()` to group two commands: a `trap` command and the Python script execution.
+   - `trap 'kill 0' SIGINT` is a command that traps the SIGINT signal (typically generated by pressing Ctrl+C) and then executes the command `kill 0`.
+   - `kill 0` sends a SIGTERM to all processes in the current process group, effectively terminating all child processes started by the script.
+   - This setup ensures that if you interrupt the script (with Ctrl+C), it not only stops the Python script but also any other processes that might have been started by it in the same process group.
+
+In summary, this script changes to the directory where it's located, then runs a Python script, ensuring that if an interrupt signal is received (like pressing Ctrl+C), all processes started by the script are also terminated. However, remember to correct the shebang line to `#!/bin/sh` for it to work properly.
