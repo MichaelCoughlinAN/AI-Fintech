@@ -21,11 +21,11 @@ cd AI-Fintech
 Follow additional setup instructions in setup.txt
 
 ## Contributing
-Interested in contributing? I welcome contributions from anyone!
+Would you be interested in contributing? I welcome contributions from anyone!
 
 ## Acknowledgments
 - Contributors and community members who have helped shape this project.
 
 ---
 
-For more information, questions, or feedback, feel free to visit [hiimmichael.com](https://hiimmichael.com).
+For more information, questions, or feedback, feel free to visit https://hiimmichael.com.
