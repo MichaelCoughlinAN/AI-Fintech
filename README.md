@@ -1,5 +1,3 @@
-Creating a GitHub README is a fantastic way to introduce and explain your AI Quantitative Analyst project. Here's a template you can use as a starting point:
-
 ```markdown
 # AI Quantitative Analyst
 
