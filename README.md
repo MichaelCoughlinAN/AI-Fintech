@@ -7,12 +7,12 @@ This AI Quantitative Analyst tool is designed to leverage cutting-edge AI techno
 ## Features
 - Stock Data Analysis: Analyzes four months of stock data, focusing on technical indicators like MACD, RSI, Bollinger Bands, OBV, SMA, EMA, and Stochastic Oscillator.
 - Market Trend Tracking: Identifies top-discussed stocks from popular Reddit subreddits (r/wallstreetbets, r/stocks, r/investing, r/StockMarket) and Google Trends.
-- Informed Predictions: Utilizes advanced algorithms to generate informed predictions about the future trajectory of stocks.
+- Informed Predictions: Utilizes advanced algorithms to generate informed predictions trajectory of stocks.
 
 ## How It Works
-1. **Data Collection:** The tool pulls historical stock data and current market trends from various sources.
-2. **Data Analysis:** Leveraging AI, the tool analyzes the data using various technical indicators.
-3. **Prediction Generation:** Based on the analysis, the tool predicts future stock performance.
+1. Data Collection: The tool pulls historical stock data and current market trends from various sources.
+2. Data Analysis: Leveraging AI, the tool analyzes the data using various technical indicators.
+3. Prediction Generation: The tool predicts future stock performance based on the analysis.
 
 ## Installation
 ```bash
